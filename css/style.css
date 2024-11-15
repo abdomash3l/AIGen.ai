@@ -141,6 +141,7 @@ color: var(--main-color-alt);
 }
 .spikes {
   position: relative;
+  z-index: 2;
 }
 .spikes::after {
   content: "";
@@ -151,6 +152,21 @@ color: var(--main-color-alt);
   z-index: 1;
   background-image: linear-gradient(135deg, white 25%, transparent 25%),
     linear-gradient(225deg, white 25%, transparent 25%);
+  background-size: 30px 30px;
+}
+.spikes1 {
+  position: relative;
+  z-index: 2;
+}
+.spikes1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  background-image: linear-gradient(135deg,  var(--section-background) 25%, transparent 25%),
+    linear-gradient(225deg,  var(--section-background) 25%, transparent 25%);
   background-size: 30px 30px;
 }
 .dots {
